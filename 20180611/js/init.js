@@ -11,9 +11,9 @@ function adapt(designWidth, rem2px) {
     // document.documentElement.style.fontSize = window.innerWidth / designWidth * rem2px / defaultFontSize * 100 + '%';
     var st = document.createElement('style');
     var portrait = "@media screen and (min-width: " + window.innerWidth + "px) {html{font-size:" + ((window.innerWidth / (designWidth / rem2px) / defaultFontSize) * 100) + "%;}}";
-    var landscape = "@media screen and (min-width: " + window.innerHeight + "px) {html{font-size:" + ((window.innerHeight / (designWidth / rem2px) / defaultFontSize) * 100) + "%;}}"
+    var landscape = "@media screen and (min-width: " + window.innerHeight + "px) {html{font-size:" + ((window.innerHeight / (designWidth / rem2px) / defaultFontSize) * 100) + "%;}}";
     st.innerHTML = portrait + landscape;
     head.appendChild(st);
-    return defaultFontSize
+    return defaultFontSize;
 };
 var defaultFontSize = adapt(750, 100);

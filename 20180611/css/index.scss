@@ -33,11 +33,13 @@ header {
     background-size: 100%;
   }
   .search {
-    width: 2.4rem;
+    width: 5rem;
     height: 0.64rem;
     border-radius: 0.04rem;
+    border: none;
+    text-indent: 0.6rem;
     background:#ededed url("../images/ico_research.png") no-repeat 0.16rem 0.12rem;
-    background-size: 15%;
+    background-size: 7%;
   }
   .more {
     width: 0.4rem;
