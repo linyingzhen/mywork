@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: .32rem/1.2 Microsoft YaHei;
+  color: #616161;
+  background-color: #fff;
+  padding-bottom: 1.5rem;
+}
+
+a,a:hover,a:active,a:visited {
+  text-decoration: none;
+}
+
+ul,li {
+  list-style-type: none;
+}
+
+.top-box {
+  width: 7.5rem;
+  height: 4.5rem;
+  position: relative;
+  .pic {
+    width: 7.5rem;
+    height: 4.5rem;
+  }
+  .left-top {
+    display: inline-block;
+    width: .46rem;
+    height: .46rem;
+    background: url("../images/btn_close.png") no-repeat center center;
+    background-size: 100%;
+    position: absolute;
+    top: 0.3rem;
+    left: 0.3rem;
+  }
+}
+
+.content-box {
+  position: relative;
+  padding: 0.32rem;
+  .add-cart {
+    position: absolute;
+    top: 1.1rem;
+    right: .34rem;
+    display: inline-block;
+    background-color: #f44336;
+    border-radius: 0.34rem;
+    font-size: 0.3rem;
+    line-height: 1.1;
+    letter-spacing: 0.004rem;
+    color: #ffffff;
+    padding: 0.14rem 0.24rem;
+  }
+  .name {
+    font-size: .34rem;
+    color: #333;
+  }
+  .red {
+    background-color: #ffffff;
+    border-radius: 0.04rem;
+    border: solid 0.01rem #f44336;
+    font-size: 0.22rem;
+    line-height: 3;
+    letter-spacing: 0.003rem;
+    color: #f44336;
+    padding: 0.06rem;
+  }
+  .price {
+    font-size: 0.34rem;
+    font-weight: normal;
+    letter-spacing: 0.004rem;
+    color: #ff6d68;
+    small {
+      font-size: 0.26rem;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 0.4rem;
+      letter-spacing: 0.003rem;
+    }
+  }
+  .commodity-description {
+    .title {
+      font-size: .32rem;
+      color: #999999;
+      line-height: 2;
+    }
+    .content {
+      font-size: .26rem;
+      color: #666666;
+      line-height: .44rem;
+      text-indent: 2em;
+    }
+  }
+}

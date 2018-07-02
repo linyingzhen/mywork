@@ -7,6 +7,43 @@
     <title>Document</title>
     <script src="js/init.js"></script>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <style>
+        html, body {
+          position: relative;
+          height: 100%;
+        }
+        /*body {
+          background: #eee;
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          color:#000;
+          margin: 0;
+          padding: 0;
+        }*/
+        .swiper-container {
+          width: 100%;
+          height: 100%;
+        }
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+          /* Center slide text vertically */
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -16,7 +53,24 @@
         <span class="more">&nbsp;</span>
     </header>
 
-    <div class="slide"><img src="./images/banner_750x340.jpg" alt=""></div>
+    <!-- <div class="slide"></div> -->
+
+    <div class="slide">
+        <!-- Swiper -->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><a href="#"><img src="./images/banner_750x340.jpg" alt=""></a></div>
+              <div class="swiper-slide"><a href="#"><img src="./images/banner_750x340.jpg" alt=""></a></div>
+              <div class="swiper-slide"><a href="#"><img src="./images/banner_750x340.jpg" alt=""></a></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+    </div>
+
+
+
+
 
     <ul class="nav">
         <li>
@@ -206,6 +260,19 @@
             <p>我的</p>
         </a>
     </footer>
+
+
+
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      });
+    </script>
+
 
 
 

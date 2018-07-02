@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font: .32rem/1.2 Microsoft YaHei;
+  color: #616161;
+  background-color: #fff; }
+
+a, a:hover, a:active, a:visited {
+  text-decoration: none; }
+
+ul, li {
+  list-style-type: none; }
+
+.red {
+  color: #f44336; }
+
+.shop-cart {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 9999; }
+  .shop-cart .empty {
+    width: 7.5rem;
+    height: 0.98rem;
+    background-color: #424242;
+    display: flex;
+    align-items: center; }
+    .shop-cart .empty .pic {
+      display: inline-block;
+      width: .54rem;
+      height: .54rem;
+      background: url("../images/btn_shop2.png") no-repeat center center;
+      background-size: 100%;
+      margin-left: .36rem; }
+    .shop-cart .empty .desc {
+      font-size: 0.28rem;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 0.4rem;
+      letter-spacing: 0.003rem;
+      color: #ffffff;
+      margin-left: .3rem; }
+  .shop-cart .has {
+    width: 7.5rem;
+    height: 0.98rem;
+    background-color: #424242;
+    display: flex;
+    align-items: center; }
+    .shop-cart .has .pic {
+      display: inline-block;
+      width: .54rem;
+      height: .54rem;
+      background: url("../images/btn_shop2.png") no-repeat center center;
+      background-size: 100%;
+      margin-left: .36rem;
+      position: relative; }
+      .shop-cart .has .pic .top-right-num {
+        background-color: #f44336;
+        color: #fff;
+        font-size: 0.18rem;
+        padding: 0.03rem 0.05rem;
+        border-radius: 0.22rem;
+        line-height: 1;
+        display: inline-block;
+        position: absolute;
+        right: -0.2rem;
+        top: -0.15rem; }
+    .shop-cart .has .center {
+      width: 3.8rem;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 0.4rem;
+      letter-spacing: 0.003rem;
+      color: #ffffff;
+      margin-left: .3rem; }
+      .shop-cart .has .center .total-price {
+        font-size: 0.3rem; }
+      .shop-cart .has .center .total-num {
+        font-size: 0.22rem; }
+    .shop-cart .has .accounts {
+      display: inline-block;
+      padding: 0.22rem 0.52rem;
+      background-color: #f44336;
+      border-radius: 0.37rem;
+      font-size: 0.3rem;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 0.4rem;
+      letter-spacing: 0.004rem;
+      color: #ffffff; }
+
+.shopcart-list {
+  width: 6.85rem;
+  height: 3.68rem;
+  background-color: #ffffff;
+  border-radius: 0.1rem;
+  position: fixed;
+  bottom: 1.31rem;
+  left: 0.32rem;
+  z-index: 111; }
+  .shopcart-list.transHeight-enter-active, .shopcart-list.transHeight-leave-active {
+    transition: all 0.5s; }
+  .shopcart-list.transHeight-enter, .shopcart-list.transHeight-leave-active {
+    transform: translate3d(0, 0, 0); }
+  .shopcart-list .list-header {
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    margin: 0 .24rem;
+    border-bottom: 1px solid rgba(7, 17, 27, 0.1); }
+    .shopcart-list .list-header .title {
+      display: inline-block;
+      font-size: 0.28rem;
+      font-weight: normal;
+      color: #333333; }
+    .shopcart-list .list-header .empty {
+      position: absolute;
+      right: 8px;
+      font-size: 0.24rem;
+      color: #666666;
+      padding: 0 0.1rem 0 0.5rem;
+      background: url("../images/ico_delete.png") no-repeat center left;
+      background-size: 16%; }
+  .shopcart-list .list-content {
+    padding-bottom: 0.1rem;
+    max-height: 217px;
+    overflow: hidden; }
+    .shopcart-list .list-content .food {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 0.24rem;
+      border-bottom: 1px solid rgba(7, 17, 27, 0.1); }
+      .shopcart-list .list-content .food .name {
+        width: 3.46rem;
+        font-size: 0.28rem;
+        color: #333;
+        height: 0.96rem;
+        line-height: 0.96rem;
+        font-weight: normal; }
+      .shopcart-list .list-content .food .price {
+        font-size: 0.28rem;
+        font-weight: normal;
+        color: #f44336;
+        padding: 0 0.1rem 0 0.1rem;
+        line-height: 0.96rem; }
+      .shopcart-list .list-content .food .computer {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .shopcart-list .list-content .food .computer .plus, .shopcart-list .list-content .food .computer .num, .shopcart-list .list-content .food .computer .minus {
+          display: inline-block;
+          width: 0.5rem;
+          height: 0.5rem; }
+        .shopcart-list .list-content .food .computer .plus {
+          background: url("../images/plus.png") no-repeat center top;
+          background-size: 100%; }
+        .shopcart-list .list-content .food .computer .num {
+          width: auto;
+          padding: 0 .1rem;
+          line-height: 0.5rem;
+          font-size: .34rem;
+          color: #6d4c41; }
+        .shopcart-list .list-content .food .computer .minus {
+          background: url("../images/minus.png") no-repeat center top;
+          background-size: 100%; }
+  .shopcart-list .list-footer {
+    font-size: 0.24rem;
+    line-height: 0.6rem;
+    letter-spacing: 0.003rem;
+    color: #666666;
+    margin: 0 0.24rem; }
+
+.zhizhao {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(7, 17, 27, 0.6);
+  z-index: 40; }
+
+/*# sourceMappingURL=common.css.map */

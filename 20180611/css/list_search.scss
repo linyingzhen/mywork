@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: .32rem/1.2 Microsoft YaHei;
+  color: #616161;
+  background-color: #ebebeb;
+  padding-bottom: 1.5rem;
+}
+
+a,a:hover,a:active,a:visited {
+  text-decoration: none;
+}
+
+ul,li {
+  list-style-type: none;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #d7ccc8;
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #d7ccc8;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #d7ccc8;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #d7ccc8;
+}
+
+
+header {
+  display: flex;
+  width: 7.5rem;
+  height: 0.88rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #3e2723;
+  .logo {
+    width: 0.42rem;
+    height: 0.39rem;
+    margin-right: auto;
+    margin-left: .32rem;
+    background-image: url("../images/Logo_jiada.png");
+    background-size: 100%;
+  }
+  .search {
+    width: 5.6rem;
+    height: 0.64rem;
+    font-size: .28rem;
+    color: #d7ccc8;
+    border-radius: 0.04rem;
+    border: none;
+    text-indent: 0.7rem;
+    background:#9f675e url("../images/ico_research2.png") no-repeat 0.16rem 0.12rem;
+    background-size: 7%;
+  }
+  .btn {
+    margin: 0 .32rem;
+    font-size: .32rem;
+    color: #fff;
+  }
+
+}
+
+.recommend {
+  margin: .32rem;
+  padding: .23rem .49rem;
+  background: #fff;
+  border-radius: 0.1rem;
+  .title {
+    font-size: 0.3rem;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: 0.004rem;
+    color: #666666;
+    margin-bottom: .3rem;
+  }
+  .search-font {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    li {
+      width: 1.8rem;
+      height: 0.6rem;
+      line-height: 0.6rem;
+      background-color: #efebe9;
+      border-radius: 0.3rem;
+      text-align: center;
+      margin-bottom: .3rem;
+    }
+  }
+}

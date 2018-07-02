@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font: .32rem/1.2 Microsoft YaHei;
+  color: #616161;
+  background-color: #fff;
+  padding-bottom: 1.5rem; }
+
+a, a:hover, a:active, a:visited {
+  text-decoration: none; }
+
+ul, li {
+  list-style-type: none; }
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #d7ccc8; }
+
+input:-moz-placeholder, textarea:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #d7ccc8; }
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #d7ccc8; }
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #d7ccc8; }
+
+.list-shop-search {
+  width: 7.5rem;
+  height: 0.88rem;
+  background-color: rgba(62, 39, 35, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .list-shop-search .logo {
+    width: 0.2rem;
+    height: 0.36rem;
+    margin-right: auto;
+    margin-left: .42rem;
+    background-image: url("../images/btn_back.png");
+    background-size: 100%; }
+  .list-shop-search .search {
+    width: 5rem;
+    height: 0.64rem;
+    border-radius: 0.04rem;
+    color: #d7ccc8;
+    border: none;
+    text-indent: 0.6rem;
+    background: #9f675e url("../images/ico_research2.png") no-repeat 0.16rem 0.12rem;
+    background-size: 7%; }
+  .list-shop-search .more {
+    width: 0.4rem;
+    height: 0.4rem;
+    margin: 0 .32rem;
+    background: url("../images/btn_zhuanfa.png") no-repeat 0 0;
+    background-size: 100%; }
+
+.food {
+  padding: .32rem;
+  border-bottom: 1px solid #dddddd; }
+  .food a {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center; }
+  .food .pic {
+    flex: 0 1.4rem;
+    width: 1.4rem;
+    height: 1.4rem; }
+  .food .right {
+    flex: 1 0;
+    position: relative;
+    margin-left: .3rem; }
+    .food .right .title {
+      font-size: 0.28rem;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 0.4rem;
+      letter-spacing: 0.003rem;
+      color: #333333; }
+    .food .right .red {
+      background-color: #ffffff;
+      border-radius: 0.04rem;
+      border: solid 0.01rem #f44336;
+      font-size: 0.22rem;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 0.6rem;
+      letter-spacing: 0.003rem;
+      color: #f44336;
+      padding: 0.06rem; }
+    .food .right .price {
+      font-size: 0.34rem;
+      font-weight: normal;
+      letter-spacing: 0.004rem;
+      color: #ff6d68;
+      padding-top: 0.1rem; }
+      .food .right .price small {
+        font-size: 0.26rem;
+        font-weight: normal;
+        font-stretch: normal;
+        line-height: 0.4rem;
+        letter-spacing: 0.003rem;
+        color: #ff6d68; }
+    .food .right .computer {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .food .right .computer .plus, .food .right .computer .num, .food .right .computer .minus {
+        display: inline-block;
+        width: 0.5rem;
+        height: 0.5rem; }
+      .food .right .computer .plus {
+        background: url("../images/plus.png") no-repeat center top;
+        background-size: 100%; }
+      .food .right .computer .num {
+        width: auto;
+        padding: 0 .1rem;
+        line-height: 0.5rem;
+        font-size: .34rem;
+        color: #6d4c41; }
+      .food .right .computer .minus {
+        background: url("../images/minus.png") no-repeat center top;
+        background-size: 100%; }
+
+/*# sourceMappingURL=search_result.css.map */

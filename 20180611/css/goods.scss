@@ -1,0 +1,378 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: .32rem/1.2 Microsoft YaHei;
+  color: #616161;
+  background-color: #fff;
+}
+
+a,a:hover,a:active,a:visited {
+  text-decoration: none;
+}
+
+ul,li {
+  list-style-type: none;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #d7ccc8;
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #d7ccc8;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #d7ccc8;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #d7ccc8;
+}
+
+.list-shop-search {
+  position: fixed;
+  z-index: 11;
+  top: 0;
+  left: 0;
+  width: 7.5rem;
+  height: 0.88rem;
+  background-color: rgba(62, 39, 35, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .logo {
+    width: 0.2rem;
+    height: 0.36rem;
+    margin-right: auto;
+    margin-left: .42rem;
+    background-image: url("../images/btn_back.png");
+    background-size: 100%;
+  }
+  .search {
+    width: 5rem;
+    height: 0.64rem;
+    border-radius: 0.04rem;
+    color: #d7ccc8;
+    border: none;
+    text-indent: 0.6rem;
+    background:#9f675e url("../images/ico_research2.png") no-repeat 0.16rem 0.12rem;
+    background-size: 7%;
+  }
+  .more {
+    width: 0.4rem;
+    height: 0.4rem;
+    margin: 0 .32rem;
+    background:url("../images/btn_zhuanfa.png") no-repeat 0 0;
+    background-size: 100%;
+  }
+}
+
+.header {
+  width: 7.5rem;
+  height: 2.4rem;
+  position: relative;
+  z-index: 1;
+  .img-bg {
+    width: 100%;
+  }
+  .content {
+    position: absolute;
+    left: .24rem;
+    bottom: .3rem;
+    display: flex;
+    .shop-pic {
+      width: 0.9rem;
+      height: 0.9rem;
+    }
+    .shop-msg {
+      margin-left: .36rem;
+      color: #fff;
+      .title {
+        font-size: .3rem;
+      }
+      .desc {
+        font-size: .24rem;
+        line-height: 2;
+      }
+
+    }
+  }
+
+}
+
+
+.goods {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  .menu-wrapper {
+    width: 1.6rem;
+    background: #f7f8f9;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    > ul {
+      height: 10rem;
+    }
+    .menu-item, .menu-item-selected {
+      position: relative;
+      display: table;
+      font-size: 0.26rem;
+      line-height: 0.28rem;
+      color: #666666;
+      padding: .3rem .2rem;
+      text-align: left;
+    }
+    .menu-item:last-child:after {
+      content: none;
+    }
+    .menu-item-selected {
+      &:last-child:after {
+        content: none;
+      }
+      color: #333333;
+      background: #fff;
+      font-weight: bold;
+      .text {
+        font-weight: bold;
+      }
+    }
+    .menu-item:after {
+      position: absolute;
+      content: '';
+      left: 0.24rem;
+      width: 56px;
+      bottom: 0;
+    }
+    .text {
+      display: table-cell;
+      vertical-align: middle;
+      white-space: normal;
+      line-height: 0.32rem;
+    }
+  }
+  .foods-wrapper {
+    width: 5.9rem;
+    margin-top: 0;
+    > ul {
+      height: 10rem;
+      overflow: scroll;
+    }
+    .food-list h1 {
+      height: 0.6rem;
+      line-height: 0.6rem;
+      padding-left: 0.2rem;
+      font-size: 0.26rem;
+      font-weight: normal;
+      color: #666;
+    }
+    .food-item {
+      position: relative;
+      display: block;
+      margin: 0 0.2rem;
+      padding: 0.2rem 0;
+      border-bottom: 1px solid rgba(7, 17, 27, 0.1);
+      overflow: hidden;
+      .icon {
+        float: left;
+        width: 1.24rem;
+        display: inline-block;
+        img {
+          width: 1.24rem;
+          height: 1.24rem;
+          border-radius: 0.07rem;
+        }
+        .discount {
+          text-align: center;
+          color: #f00;
+          font-size: 0.28rem;
+          width: 1.3rem;
+          height: 0.31rem;
+        }
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+      .content {
+        display: inline-block;
+        font-size: 0.3rem;
+        width: 3.8rem;
+        padding-left: 0.2rem;
+        h2 {
+          overflow: hidden;
+          margin: 0 0 0.1rem 0;
+          font-size: 0.3rem;
+          height: 0.36rem;
+          line-height: 0.36rem;
+          color: #333;
+        }
+        .sell-info, .subname {
+          font-size: 0.2rem;
+          color: #93999f;
+          line-height: 0.2rem;
+        }
+        .sell-info .sellCount {
+          margin-right: 0.08rem;
+        }
+        .subname {
+          .sellCount {
+            margin-right: 0.08rem;
+          }
+          font-size: 0.26rem;
+          margin-bottom: 0.1rem;
+          line-height: 0.3rem;
+        }
+        .price {
+          font-size: 0.24rem;
+          line-height: 0.3rem;
+          .newPrice {
+            display: block;
+            font-size: 0.34rem;
+            font-weight: bold;
+            color: #fb4e44;
+            .unit {
+              font-size: 0.2rem;
+              font-weight: normal;
+            }
+          }
+          .old_price {
+            text-decoration: line-through;
+            color: #cbcbcb;
+          }
+        }
+        .cartcontrol-wrapper {
+          position: absolute;
+          right: 0;
+          bottom: 0.3rem;
+          z-index: 20;
+          .foodsqin {
+            color: #f00;
+            padding: 0.2rem;
+            font-size: 0.28rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.food {
+  padding: .25rem;
+  border-bottom: 1px solid #dddddd;
+  a {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .pic {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+  .right {
+    position: relative;
+    margin-left: .3rem;
+    .title {
+      width: 3.8rem;
+      font-size: 0.28rem;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 0.4rem;
+      letter-spacing: 0.003rem;
+      color: #333333;
+      overflow: hidden;
+      text-overflow:ellipsis;
+      white-space: nowrap;
+    }
+    .red {
+      background-color: #ffffff;
+      border-radius: 0.04rem;
+      border: solid 0.01rem #f44336;
+      font-size: 0.22rem;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 0.6rem;
+      letter-spacing: 0.003rem;
+      color: #f44336;
+      padding: 0.06rem;
+    }
+    .price {
+      font-size: 0.34rem;
+      font-weight: normal;
+      letter-spacing: 0.004rem;
+      color: #ff6d68;
+      padding-top: 0.1rem;
+      small {
+        font-size: 0.26rem;
+        font-weight: normal;
+        font-stretch: normal;
+        line-height: 0.4rem;
+        letter-spacing: 0.003rem;
+        color: #ff6d68;
+      }
+    }
+    .computer {
+      position: absolute;
+      right: 0.02rem;
+      bottom: 0.02rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .plus,.num,.minus {
+        display: inline-block;
+        width: 0.5rem;
+        height: 0.5rem;
+      }
+      .plus {
+        background: url("../images/plus.png") no-repeat center top;
+        background-size: 100%;
+      }
+      .num {
+        width: auto;
+        padding: 0 .1rem;
+        line-height: 0.5rem;
+        font-size: .34rem;
+        color: #6d4c41;
+      }
+      .minus {
+        background: url("../images/minus.png") no-repeat center top;
+        background-size: 100%;
+      }
+    }
+    .spec {
+      position: absolute;
+      right: 0.02rem;
+      bottom: -0.02rem;
+      width: 1.52rem;
+      height: 0.56rem;
+      background-color: #ffffff;
+      border-radius: 0.28rem;
+      border: solid 0.02rem #6d4c41;
+      font-size: 0.24rem;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 0.56rem;
+      letter-spacing: 0.003rem;
+      color: #6d4c41;
+      text-align: center;
+    }
+
+  }
+}
+
+.btn-pc {
+  position: relative;
+  float: right;
+  border: 1px solid #085a36;
+  padding: 0.11rem 0.12rem;
+  font-size: 0.24rem;
+  color: #005e32;
+  text-decoration: none;
+  border-radius: 0.5rem;
+}

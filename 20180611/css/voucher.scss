@@ -1,0 +1,201 @@
+body {
+  background-color: #ebebeb;
+  padding: .3rem;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background:url("../images/not_choose.png") no-repeat ;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+input[type="radio"]:focus {
+  outline: none;
+}
+
+input[type="radio"]:checked {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background:url("../images/btn_choose.png") no-repeat ;
+  background-size: 100% 100%;
+}
+
+.voucher-non {
+  width: 6.85rem;
+  height: 1.32rem;
+  background-color: #ffffff;
+  border-radius: 0.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: .16rem;
+  .name {
+    line-height: 0.6rem;
+    letter-spacing: 0.004rem;
+    color: #333333;
+    margin-left: .8rem;
+  }
+  .right {
+    margin-right: .3rem;
+  }
+  .sl-btn {
+    width: 0.28rem;
+    height: 0.28rem;
+  }
+
+}
+
+.voucher-food {
+  width: 6.85rem;
+  height: 1.32rem;
+  border-radius: 0.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: .16rem;
+  font-size: 0.24rem;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0.003rem;
+  color: #999999;
+  .left-box {
+    width: 1.85rem;
+    height: 1rem;
+    background-color: #ffffff;
+    border-radius: 0.1rem;
+    padding: 0.16rem 0;
+    .content {
+      text-align: center;
+      height: 1rem;
+      border-right: 1px dashed #dddddd;
+      .price {
+        font-size: 0.42rem;
+        letter-spacing: 0.005rem;
+        color: #ff5252;
+        small {
+          font-size: 0.26rem;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 0.6rem;
+          letter-spacing: 0.003rem;
+          color: #ff5252;
+        }
+
+      }
+
+    }
+  }
+  .right-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 5rem;
+    height: 1.32rem;
+    background-color: #ffffff;
+    border-radius: 0.1rem;
+    .name {
+      font-size: 0.32rem;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: 0.004rem;
+      color: #333333;
+      margin-left: .5rem;
+    }
+    .time {
+      display: block;
+      font-size: 0.24rem;
+      font-weight: normal;
+      font-stretch: normal;
+      letter-spacing: 0.003rem;
+      color: #999999;
+    }
+    .right {
+      margin-right: .3rem;
+    }
+    .sl-btn {
+      width: 0.28rem;
+      height: 0.28rem;
+    }
+  }
+}
+
+.voucher-shop {
+  width: 6.85rem;
+  height: 1.32rem;
+  border-radius: 0.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: .16rem;
+  font-size: 0.24rem;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0.003rem;
+  color: #999999;
+  .left-box {
+    width: 1.85rem;
+    height: 1rem;
+    background-color: #dddddd;
+    border-radius: 0.1rem;
+    padding: 0.16rem 0;
+    .content {
+      text-align: center;
+      height: 1rem;
+      border-right: 1px dashed #999999;
+      .price {
+        font-size: 0.42rem;
+        letter-spacing: 0.005rem;
+        color: #999999;
+        small {
+          font-size: 0.26rem;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 0.6rem;
+          letter-spacing: 0.003rem;
+          color: #999999;
+        }
+
+      }
+
+    }
+  }
+  .right-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 5rem;
+    height: 1.32rem;
+    background-color: #dddddd;
+    border-radius: 0.1rem;
+    .name {
+      font-size: 0.32rem;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: 0.004rem;
+      color: #333333;
+      margin-left: .5rem;
+    }
+    .time {
+      display: block;
+      font-size: 0.24rem;
+      font-weight: normal;
+      font-stretch: normal;
+      letter-spacing: 0.003rem;
+      color: #999999;
+    }
+    .right {
+      margin-right: .3rem;
+    }
+    .sl-btn {
+      width: 0.28rem;
+      height: 0.28rem;
+    }
+  }
+}
+
+
