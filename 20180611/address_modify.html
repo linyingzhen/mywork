@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>修改收货地址</title>
+    <script src="js/init.js"></script>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/address_new.css">
+</head>
+<body>
+
+<div class="top-box">
+    <p class="name">
+        <label for="n1">收货人</label>
+        <input id="n1" type="text" value="孙健">
+    </p>
+    <p class="phone">
+        <label for="p1">联系电话</label>
+        <input id="p1" type="text" value="17701953775">
+    </p>
+</div>
+
+<div class="center-box">
+    <p class="located">
+        <span class="title">所在地区</span>
+        <span class="region">广东省广州市白云区景泰街道</span>
+        <span class="desc">请选择</span>
+        <span class="pic"></span>
+    </p>
+    <p class="detailed-address">
+        <label for="address-in" class="title">详细地址</label>
+        <textarea class="address-content" name="" id="address-in" cols="30" rows="10" maxlength="100" placeholder="请输入详细地址信息，如道路、门牌号，
+小区、楼栋号，单元室等">空港大道嘉大广场北塔18楼</textarea>
+
+    </p>
+
+</div>
+
+<div class="set-default">
+    <span class="title">设为默认地址</span>
+    <input type="checkbox" checked class="yd-switch"
+           style="color: rgb(76, 216, 100);" />
+</div>
+
+<a href="#" class="save">保存</a>
+
+
+</body>
+</html>

@@ -29,6 +29,16 @@ ul,li {
   left: 0.75rem;
   z-index: 50;
   padding:0 .3rem .3rem .3rem;
+  .close {
+    position: absolute;
+    right: .36rem;
+    top: .36rem;
+    display: inline-block;
+    width: 0.46rem;
+    height: 0.46rem;
+    background: url("../images/btn_close.png") no-repeat center center;
+    background-size: 100%;
+  }
   .name {
     font-size: 0.32rem;
     color: #333333;

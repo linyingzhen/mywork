@@ -1,0 +1,179 @@
+body {
+  font-size: .28rem;
+  color: #333333;
+  background-color: #ebebeb;
+  padding: .32rem;
+}
+
+.detailed-box {
+  padding: .22rem;
+  background-color: #ffffff;
+  border-radius: 0.1rem;
+  margin-bottom: .18rem;
+}
+
+.shop-box {
+  .head {
+    display: flex;
+    align-items: center;
+    padding-bottom: .2rem;
+    border-bottom: 1px solid #dddddd;
+    .pic {
+      width: 0.48rem;
+      height: 0.48rem;
+    }
+    .title {
+      margin-left: .2rem;
+    }
+
+  }
+
+
+}
+
+.food-list {
+  border-bottom: 1px solid #dddddd;
+}
+
+.food {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: .12rem 0;
+  .pic {
+    width: 0.94rem;
+    height: 0.94rem;
+  }
+  .center {
+    flex-grow: 1;
+    margin-left: .2rem;
+    .count {
+      font-size: .26rem;
+      color: #666666;
+      line-height: 2;
+    }
+  }
+  .price {
+    color: #666666;
+
+  }
+
+}
+
+.discount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 2.4;
+  .price {
+    color: #f44336;
+  }
+
+}
+
+.voucher {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 3;
+  border-bottom: 1px solid #dddddd;
+  .price {
+    color: #f44336;
+    flex-grow: 1;
+    text-align: right;
+  }
+  .pic {
+    width: 0.16rem;
+    height: 0.28rem;
+    background: url("../images/btn_enter22.png") no-repeat center center;
+    background-size: 100%;
+    margin-left: .2rem;
+  }
+
+}
+
+.real-payment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 3;
+}
+
+.payment-box {
+  padding: .22rem;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 0.1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: .18rem;
+  .pic {
+    width: 0.7rem;
+    height: 0.7rem;
+  }
+  .right {
+    margin-left: .3rem;
+  }
+}
+
+.bd-red {
+  border: 1px solid red;
+}
+
+.has {
+  width: 7.5rem;
+  height: 0.98rem;
+  background-color: #424242;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .pic {
+    display: inline-block;
+    width: .54rem;
+    height: .54rem;
+    background: url("../images/btn_shop2.png") no-repeat center center;
+    background-size: 100%;
+    margin-left: .36rem;
+    position: relative;
+    .top-right-num {
+      background-color: #f44336;
+      color: #fff;
+      font-size: 0.18rem;
+      padding: 0.03rem 0.05rem;
+      border-radius: 0.22rem;
+      line-height: 1;
+      display: inline-block;
+      position: absolute;
+      right: -0.2rem;
+      top: -0.15rem;
+    }
+  }
+  .center {
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 0.4rem;
+    letter-spacing: 0.003rem;
+    color: #ffffff;
+    margin-left: .34rem;
+    .total-price {
+      font-size: 0.3rem;
+    }
+    .total-num {
+      font-size: 0.22rem;
+    }
+  }
+  .accounts {
+    display: inline-block;
+    padding: 0.22rem 0.52rem;
+    background-color: #f44336;
+    border-radius: 0.37rem;
+    font-size: 0.3rem;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 0.4rem;
+    letter-spacing: 0.004rem;
+    color: #ffffff;
+    margin-right: .24rem;
+  }
+}
