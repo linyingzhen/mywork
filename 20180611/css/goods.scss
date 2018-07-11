@@ -1,22 +1,12 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
+@charset "utf-8";
+/*重置body*/
 body {
   font: .32rem/1.2 Microsoft YaHei;
   color: #616161;
   background-color: #fff;
 }
 
-a,a:hover,a:active,a:visited {
-  text-decoration: none;
-}
-
-ul,li {
-  list-style-type: none;
-}
-
+/*重置输入框*/
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   /* WebKit browsers */
   color: #d7ccc8;
@@ -34,6 +24,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   color: #d7ccc8;
 }
 
+/*搜索栏*/
 .list-shop-search {
   position: fixed;
   z-index: 11;
@@ -72,6 +63,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   }
 }
 
+/*店铺信息*/
 .header {
   width: 7.5rem;
   height: 2.4rem;
@@ -105,7 +97,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 }
 
-
+/*产品信息*/
 .goods {
   display: flex;
   width: 100%;
@@ -122,6 +114,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    overflow: scroll;
     .menu-item, .menu-item-selected {
       position: relative;
       font-size: 0.26rem;
@@ -174,6 +167,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   .foods-wrapper {
     width: 5.9rem;
     margin-top: 0;
+    overflow: scroll;
     > ul {
       overflow: scroll;
     }
@@ -275,7 +269,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     }
   }
 }
-
 .food {
   padding: .25rem;
   border-bottom: 1px solid #dddddd;
@@ -306,7 +299,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     .red {
       background-color: #ffffff;
       border-radius: 0.04rem;
-      border: solid 0.01rem #f44336;
+      border: solid 1px #f44336;
       font-size: 0.22rem;
       font-weight: normal;
       font-stretch: normal;
@@ -377,15 +370,4 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     }
 
   }
-}
-
-.btn-pc {
-  position: relative;
-  float: right;
-  border: 1px solid #085a36;
-  padding: 0.11rem 0.12rem;
-  font-size: 0.24rem;
-  color: #005e32;
-  text-decoration: none;
-  border-radius: 0.5rem;
 }

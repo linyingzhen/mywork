@@ -4,74 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Document</title>
+    <title>首页</title>
     <script src="js/init.js"></script>
-    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
-    <style>
-        html, body {
-          position: relative;
-          height: 100%;
-        }
-        /*body {
-          background: #eee;
-          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-          font-size: 14px;
-          color:#000;
-          margin: 0;
-          padding: 0;
-        }*/
-        .swiper-container {
-          width: 100%;
-          height: 100%;
-        }
-        .swiper-slide {
-          text-align: center;
-          font-size: 18px;
-          background: #fff;
-          /* Center slide text vertically */
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: -webkit-flex;
-          display: flex;
-          -webkit-box-pack: center;
-          -ms-flex-pack: center;
-          -webkit-justify-content: center;
-          justify-content: center;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
-          -webkit-align-items: center;
-          align-items: center;
-        }
-    </style>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
+
+<!--搜索栏-->
     <header>
         <span class="logo">&nbsp;</span>
         <input type="search" class="search">&nbsp;</input>
         <span class="more">&nbsp;</span>
     </header>
 
-    <!-- <div class="slide"></div> -->
-
+<!--幻灯-->
     <div class="slide">
-        <!-- Swiper -->
           <div class="swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide"><a href="#"><img src="./images/banner_750x340.jpg" alt=""></a></div>
               <div class="swiper-slide"><a href="#"><img src="./images/banner_750x340.jpg" alt=""></a></div>
               <div class="swiper-slide"><a href="#"><img src="./images/banner_750x340.jpg" alt=""></a></div>
             </div>
-            <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
           </div>
     </div>
 
-
-
-
-
+<!--导航-->
     <ul class="nav">
         <li>
             <a href="#">
@@ -123,6 +83,7 @@
         </li>
     </ul>
 
+<!--图腾-->
     <div class="ttbox">
         <a href="#">
             <span class="pic"><img src="./images/pic_tuteng_1_160x160.jpg" alt=""></span>
@@ -138,6 +99,7 @@
         </a>
     </div>
 
+<!--杂项-->
     <div class="center_box">
         <div class="one">
             <span class="left_first">
@@ -193,6 +155,7 @@
         </div>
     </div>
 
+<!--为您推荐-->
     <div class="recommend">
         <p class="box_name">为您推荐</p>
         <ul class="shop">
@@ -236,6 +199,7 @@
 
     </div>
 
+<!--底部导航-->
     <footer>
         <a href="#" class="special">
             <img src="./images/btn_home.png" alt="" class="pic1">

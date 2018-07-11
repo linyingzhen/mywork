@@ -1,35 +1,12 @@
-* {
-  margin: 0;
-  padding: 0; }
-
+@charset "UTF-8";
+/*重置样式*/
 body {
   font: .32rem/1.2 Microsoft YaHei;
   color: #616161;
   background-color: #fff;
   padding-bottom: 1.5rem; }
 
-a, a:hover, a:active, a:visited {
-  text-decoration: none; }
-
-ul, li {
-  list-style-type: none; }
-
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-  /* WebKit browsers */
-  color: #d7ccc8; }
-
-input:-moz-placeholder, textarea:-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
-  color: #d7ccc8; }
-
-input::-moz-placeholder, textarea::-moz-placeholder {
-  /* Mozilla Firefox 19+ */
-  color: #d7ccc8; }
-
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-  /* Internet Explorer 10+ */
-  color: #d7ccc8; }
-
+/*搜索栏*/
 .list-shop-search {
   width: 7.5rem;
   height: 0.88rem;
@@ -60,6 +37,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     background: url("../images/btn_zhuanfa.png") no-repeat 0 0;
     background-size: 100%; }
 
+/*产品*/
 .food {
   padding: .32rem;
   border-bottom: 1px solid #dddddd; }

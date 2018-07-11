@@ -1,3 +1,5 @@
+@charset "utf-8";
+/*初始化*/
 * {
   margin: 0;
   padding: 0;
@@ -21,6 +23,7 @@ ul,li {
   color: #f44336;
 }
 
+/*购物车*/
 .shop-cart {
   position: fixed;
   left: 0;
@@ -107,7 +110,7 @@ ul,li {
   }
 }
 
-
+/*购物车内容*/
 .shopcart-list {
   width: 6.85rem;
   height: 3.68rem;
@@ -207,7 +210,7 @@ ul,li {
   }
 }
 
-
+/*遮罩*/
 .zhizhao {
   position: fixed;
   top: 0;

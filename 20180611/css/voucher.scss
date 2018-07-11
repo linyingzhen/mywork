@@ -1,8 +1,11 @@
+@charset "utf-8";
+/*重置body背景色*/
 body {
   background-color: #ebebeb;
   padding: .3rem;
 }
 
+/*自定义单选按钮*/
 input[type="radio"] {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -14,7 +17,6 @@ input[type="radio"] {
 input[type="radio"]:focus {
   outline: none;
 }
-
 input[type="radio"]:checked {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -23,6 +25,7 @@ input[type="radio"]:checked {
   background-size: 100% 100%;
 }
 
+/*不使用代金券*/
 .voucher-non {
   width: 6.85rem;
   height: 1.32rem;
@@ -48,6 +51,7 @@ input[type="radio"]:checked {
 
 }
 
+/*餐饮代金券*/
 .voucher-food {
   width: 6.85rem;
   height: 1.32rem;
@@ -123,6 +127,7 @@ input[type="radio"]:checked {
   }
 }
 
+/*购物代金券*/
 .voucher-shop {
   width: 6.85rem;
   height: 1.32rem;

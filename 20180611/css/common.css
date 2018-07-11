@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/*初始化*/
 * {
   margin: 0;
   padding: 0; }
@@ -5,7 +7,8 @@
 body {
   font: .32rem/1.2 Microsoft YaHei;
   color: #616161;
-  background-color: #fff; }
+  background-color: #fff;
+  -webkit-text-size-adjust: none; }
 
 a, a:hover, a:active, a:visited {
   text-decoration: none; }
@@ -13,9 +16,26 @@ a, a:hover, a:active, a:visited {
 ul, li {
   list-style-type: none; }
 
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #d7ccc8; }
+
+input:-moz-placeholder, textarea:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #d7ccc8; }
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #d7ccc8; }
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #d7ccc8; }
+
 .red {
   color: #f44336; }
 
+/*购物车*/
 .shop-cart {
   position: fixed;
   left: 0;
@@ -174,6 +194,7 @@ ul, li {
     color: #666666;
     margin: 0 0.24rem; }
 
+/*遮罩*/
 .zhizhao {
   position: fixed;
   top: 0;

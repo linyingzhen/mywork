@@ -1,9 +1,12 @@
+@charset "UTF-8";
+/*重置body*/
 body {
   font-size: .28rem;
   color: #333333;
   background-color: #ebebeb;
-  padding: .32rem; }
+  padding: .32rem .32rem 1.5rem; }
 
+/*订单相关信息*/
 .detailed-box {
   padding: .22rem;
   background-color: #ffffff;
@@ -73,6 +76,7 @@ body {
   align-items: center;
   line-height: 3; }
 
+/*支付*/
 .payment-box {
   padding: .22rem;
   background-color: #ffffff;
@@ -91,6 +95,7 @@ body {
 .bd-red {
   border: 1px solid red; }
 
+/*购物车*/
 .has {
   width: 7.5rem;
   height: 0.98rem;

@@ -1,3 +1,5 @@
+@charset "utf-8";
+/*初始化*/
 * {
   margin: 0;
   padding: 0;
@@ -35,7 +37,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   color: #d7ccc8;
 }
 
-
+/*搜索栏*/
 header {
   display: flex;
   width: 7.5rem;
@@ -70,6 +72,7 @@ header {
 
 }
 
+/*热门推荐*/
 .recommend {
   margin: .32rem;
   padding: .23rem .49rem;

@@ -11,6 +11,7 @@
 </head>
 <body>
 
+<!--地址1-->
 <div class="address-box">
     <p>
         <span class="name">孙海念</span>
@@ -19,13 +20,14 @@
     <p class="address">广东省广州市白云区嘉禾街道白云区嘉禾望岗空港大道
         “嘉大广场”塔10楼</p>
     <div class="operation">
-        <input id="adr1" class="adr" type="radio" name="adr" />
+        <input id="adr1" class="adr" type="radio" name="adr" value="1" />
         <label for="adr1">设为默认</label>
-        <a href="" class="edit">编辑</a>
+        <a href="address_modify.html" class="edit">编辑</a>
         <a href="" class="delete">删除</a>
     </div>
 </div>
 
+<!--地址2-->
 <div class="address-box">
     <p>
         <span class="name">孙海念</span>
@@ -34,14 +36,14 @@
     <p class="address">广东省广州市白云区嘉禾街道白云区嘉禾望岗空港大道
         “嘉大广场”塔10楼</p>
     <div class="operation">
-        <input id="adr2" class="adr" type="radio" name="adr" />
+        <input id="adr2" class="adr" type="radio" name="adr" value="2" />
         <label for="adr2">设为默认</label>
-        <a href="" class="edit">编辑</a>
+        <a href="address_modify.html" class="edit">编辑</a>
         <a href="" class="delete">删除</a>
     </div>
 </div>
 
-
+<!--地址3-->
 <div class="address-box">
     <p>
         <span class="name">孙海念</span>
@@ -50,16 +52,21 @@
     <p class="address">广东省广州市白云区嘉禾街道白云区嘉禾望岗空港大道
         “嘉大广场”塔10楼</p>
     <div class="operation">
-        <input id="adr3" class="adr" type="radio" name="adr" checked/>
+        <input id="adr3" class="adr" type="radio" name="adr" value="3" checked/>
         <label class="red" for="adr3">设为默认</label>
-        <a href="" class="edit">编辑</a>
+        <a href="address_modify.html" class="edit">编辑</a>
         <a href="" class="delete">删除</a>
     </div>
 </div>
 
 
-<div class="add_new">添加新地址</div>
+<!--添加新地址-->
+<div class="add_new"><a href="address_new.html">添加新地址</a></div>
 
+
+<!--底部js-->
+<script src="js/jquery.min.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>

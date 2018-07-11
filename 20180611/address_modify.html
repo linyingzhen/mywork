@@ -6,11 +6,14 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>修改收货地址</title>
     <script src="js/init.js"></script>
+    <link rel="stylesheet" href="css/ydui.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/address_new.css">
+
 </head>
 <body>
 
+<!--收货人 联系电话-->
 <div class="top-box">
     <p class="name">
         <label for="n1">收货人</label>
@@ -22,30 +25,60 @@
     </p>
 </div>
 
+<!--地址信息-->
 <div class="center-box">
-    <p class="located">
+
+    <div class="located">
         <span class="title">所在地区</span>
-        <span class="region">广东省广州市白云区景泰街道</span>
-        <span class="desc">请选择</span>
-        <span class="pic"></span>
-    </p>
+        <div id="J_Address2">
+            <div class="cell-right cell-arrow">
+                <input type="text" class="cell-input" readonly  value="广东 广州市 白云区" placeholder="请选择收货地址">
+            </div>
+            <!-- <span class="region">广东省广州市白云区景泰街道</span> -->
+            <span class="desc">请选择</span>
+            <span class="pic"></span>
+        </div>
+    </div>
     <p class="detailed-address">
         <label for="address-in" class="title">详细地址</label>
-        <textarea class="address-content" name="" id="address-in" cols="30" rows="10" maxlength="100" placeholder="请输入详细地址信息，如道路、门牌号，
-小区、楼栋号，单元室等">空港大道嘉大广场北塔18楼</textarea>
-
+        <textarea class="address-content" name="" id="address-in" cols="30" rows="10" maxlength="100" placeholder="请输入详细地址信息，如道路、门牌号，小区、楼栋号，单元室等">空港大道嘉大广场北塔18楼</textarea>
     </p>
-
 </div>
 
+<!--设为默认地址-->
 <div class="set-default">
     <span class="title">设为默认地址</span>
     <input type="checkbox" checked class="yd-switch"
            style="color: rgb(76, 216, 100);" />
 </div>
 
+<!--保存-->
 <a href="#" class="save">保存</a>
 
 
 </body>
+<script src="js/jquery.min.js"></script>
+<script src="js/ydui.citys.js"></script>
+<script src="js/ydui.js"></script>
+<script>
+    !function () {
+        var $target = $('#J_Address2');
+
+        $target.citySelect({
+            provance: '广东',
+            city: '广州市',
+            area: '白云区'
+        });
+
+        $target.on('click', function (event) {
+            event.stopPropagation();
+            $target.citySelect('open');
+        });
+
+        $target.on('done.ydui.cityselect', function (ret) {
+            // console.log($(this).children("div").children("input").val());
+            $(this).children("div").children("input").val(ret.provance + ' ' + ret.city + ' ' + ret.area);
+        });
+    }();
+</script>
 </html>

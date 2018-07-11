@@ -11,6 +11,7 @@
 </head>
 <body>
 
+<!--订单相关信息-->
 <div class="detailed-box">
     <div class="shop-box">
         <p class="head">
@@ -52,18 +53,23 @@
 
 </div>
 
+<!--嘉大通支付-->
 <div class="payment-box bd-red">
     <img src="./images/LOGO_jiada22.png" alt="" class="pic">
     <div class="right">
         <p class="desc">嘉大通支付</p>
     </div>
 </div>
+
+<!--微信支付-->
 <div class="payment-box">
     <img src="./images/LOGO_wechat.png" alt="" class="pic">
     <div class="right">
         <p class="desc">微信支付</p>
     </div>
 </div>
+
+<!--支付宝支付-->
 <div class="payment-box">
     <img src="./images/LOGO_zhifubao.png" alt="" class="pic">
     <div class="right">
@@ -72,6 +78,7 @@
 </div>
 
 
+<!--购物车-->
 <div class="shop-cart">
     <div class="empty" style="display: none;">
         <span class="pic">&nbsp;</span>
@@ -88,6 +95,21 @@
         <span class="accounts">立即支付</span>
     </div>
 </div>
+
+<script src="js/jquery.min.js"></script>
+<script>
+    $(function(){
+        var paymentBox = $(".payment-box");
+        paymentBox.each(function(){
+            $(this).on('click',function(){
+                paymentBox.removeClass("bd-red");
+                $(this).addClass("bd-red");
+                console.log($(this).index());
+            })
+        })
+
+    })
+</script>
 
 
 </body>

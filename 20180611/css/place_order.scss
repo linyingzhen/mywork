@@ -1,17 +1,19 @@
+@charset "utf-8";
+/*重置body*/
 body {
   font-size: .28rem;
   color: #333333;
   background-color: #ebebeb;
-  padding: .32rem;
+  padding: .32rem .32rem 1.5rem;
 }
 
+/*订单相关信息*/
 .detailed-box {
   padding: .22rem;
   background-color: #ffffff;
   border-radius: 0.1rem;
   margin-bottom: .18rem;
 }
-
 .shop-box {
   .head {
     display: flex;
@@ -30,11 +32,9 @@ body {
 
 
 }
-
 .food-list {
   border-bottom: 1px solid #dddddd;
 }
-
 .food {
   display: flex;
   justify-content: space-between;
@@ -59,7 +59,6 @@ body {
   }
 
 }
-
 .discount {
   display: flex;
   justify-content: space-between;
@@ -70,7 +69,6 @@ body {
   }
 
 }
-
 .voucher {
   display: flex;
   justify-content: space-between;
@@ -91,7 +89,6 @@ body {
   }
 
 }
-
 .real-payment {
   display: flex;
   justify-content: space-between;
@@ -99,6 +96,7 @@ body {
   line-height: 3;
 }
 
+/*支付*/
 .payment-box {
   padding: .22rem;
   background-color: #ffffff;
@@ -116,11 +114,11 @@ body {
     margin-left: .3rem;
   }
 }
-
 .bd-red {
   border: 1px solid red;
 }
 
+/*购物车*/
 .has {
   width: 7.5rem;
   height: 0.98rem;
