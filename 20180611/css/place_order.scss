@@ -94,6 +94,9 @@ body {
   justify-content: space-between;
   align-items: center;
   line-height: 3;
+  .title {
+    margin-left: 3rem;
+  }
 }
 
 /*支付*/
@@ -103,15 +106,29 @@ body {
   border: 1px solid #ffffff;
   border-radius: 0.1rem;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: .18rem;
   .pic {
     width: 0.7rem;
     height: 0.7rem;
   }
-  .right {
+  .center {
     margin-left: .3rem;
+  }
+  .jiada {
+    width: 3.1rem;
+  }
+  .weixi {
+    width: 4.1rem;
+  }
+  .zfb {
+    width: 1.6rem;
+  }
+  .ji-fen {
+    font-size: 0.24rem;
+    letter-spacing: 0.003rem;
+    color: #999999;
   }
 }
 .bd-red {
@@ -124,42 +141,14 @@ body {
   height: 0.98rem;
   background-color: #424242;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  .pic {
-    display: inline-block;
-    width: .54rem;
-    height: .54rem;
-    background: url("../images/btn_shop2.png") no-repeat center center;
-    background-size: 100%;
-    margin-left: .36rem;
-    position: relative;
-    .top-right-num {
-      background-color: #f44336;
-      color: #fff;
-      font-size: 0.18rem;
-      padding: 0.03rem 0.05rem;
-      border-radius: 0.22rem;
-      line-height: 1;
-      display: inline-block;
-      position: absolute;
-      right: -0.2rem;
-      top: -0.15rem;
-    }
-  }
-  .center {
-    font-weight: normal;
-    font-stretch: normal;
+  .total-prices {
+    font-size: 0.3rem;
     line-height: 0.4rem;
-    letter-spacing: 0.003rem;
+    letter-spacing: 0.004rem;
     color: #ffffff;
-    margin-left: .34rem;
-    .total-price {
-      font-size: 0.3rem;
-    }
-    .total-num {
-      font-size: 0.22rem;
-    }
+    margin-right: .2rem;
   }
   .accounts {
     display: inline-block;

@@ -4,41 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>提交订单</title>
+    <title>订单详情</title>
     <script src="js/init.js"></script>
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/place_order.css">
+    <link rel="stylesheet" href="css/order_details.css">
 </head>
 <body>
 
-<!--嘉大通支付-->
-<div class="payment-box bd-red">
-    <img src="./images/LOGO_jiada22.png" alt="" class="pic">
-    <div class="jiada">
-        <p class="desc">嘉大通支付</p>
-        <p class="ji-fen">可以获得300积分</p>
+<!--付款成功块-->
+<div class="success-box">
+    <div class="box1">
+        <span class="pic"><img src="./images/ico_money.png" alt=""></span>
+        <div class="center">
+            <p class="msg">交易成功</p>
+            <p class="get-score">获得：<span class="red">100</span>积分</p>
+        </div>
+        <div class="right">
+            <p class="table_num">就餐 <span class="red">5</span> 号桌</p>
+        </div>
     </div>
-    <span class="money">余额：<span class="red">300.00</span></span>
+    <div class="score-box">
+        <span class="name">好评</span>
+        <span class="stars">
+            <span class="bright">&nbsp;</span>
+            <span class="bright">&nbsp;</span>
+            <span class="bright">&nbsp;</span>
+            <span class="bright">&nbsp;</span>
+            <span class="gray">&nbsp;</span>
+        </span>
+        <span class="score">4.0</span>
+    </div>
+    <a href="#" class="shop-evaluation-btn">店铺评价</a>
+    <a href="" class="one-more-btn">再来一单</a>
+
 </div>
 
-<!--微信支付-->
-<div class="payment-box">
-    <img src="./images/LOGO_wechat.png" alt="" class="pic">
-    <div class="weixi">
-        <p class="desc">微信支付</p>
-    </div>
-    <span class="ji-fen">无积分</span>
+<!--就餐时间-->
+<div class="meal-time">
+    <span class="pic">&nbsp;</span>
+    <span class="name">就餐时间</span>
+    <span class="time">2018-07-09  10:30:01</span>
 </div>
-
-<!--支付宝支付-->
-<div class="payment-box">
-    <img src="./images/LOGO_zhifubao.png" alt="" class="pic">
-    <div class="zfb">
-        <p class="desc">支付宝支付</p>
-    </div>
-    <span class="ji-fen">无积分|需要通过分享到浏览器</span>
-</div>
-
 
 <!--订单相关信息-->
 <div class="detailed-box">
@@ -72,40 +78,24 @@
         <div class="voucher">
             <span class="title">代金券</span>
             <span class="price">-&yen; 5</span>
-            <span class="pic">&nbsp;</span>
         </div>
         <div class="real-payment">
-            <span class="title">共2件商品</span>
-            <span class="total-price">小计：<span class="red">&yen; 40元</span></span>
+            <span class="count">共2件商品</span>
+            <span>小计：</span>
+            <span class="total-price">&yen; 40元</span>
         </div>
     </div>
 
 </div>
 
-
-
-
-<!--购物车-->
-<div class="shop-cart">
-    <div class="has">
-        <span class="total-prices">合计金额：￥40.00</span>
-        <span class="accounts">立即支付</span>
-    </div>
+<!--订单其它信息-->
+<div class="order-msg">
+    <p class="number">订单编号：83978923</p>
+    <p class="pay-method">支付方式：微信</p>
+    <p class="creation-time">创建时间：2018-07-08  11:21:25</p>
+    <p class="pay-time">付款时间：2018-07-08  11:21:25</p>
+    <p class="transaction-time">成交时间：2018-07-08  11:21:25</p>
 </div>
-
-<script src="js/jquery.min.js"></script>
-<script>
-    $(function(){
-        var paymentBox = $(".payment-box");
-        paymentBox.each(function(){
-            $(this).on('click',function(){
-                paymentBox.removeClass("bd-red");
-                $(this).addClass("bd-red");
-            })
-        })
-
-    })
-</script>
 
 
 </body>

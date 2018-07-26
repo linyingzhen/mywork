@@ -1,0 +1,105 @@
+
+
+.list-shop {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #ebebeb;
+}
+.list-shop-search {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 7.5rem;
+  height: 0.88rem;
+  background-color: rgba(62, 39, 35, 0.8);
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .logo {
+    width: 0.2rem;
+    height: 0.36rem;
+    margin-right: auto;
+    margin-left: .42rem;
+    background-image: url("../images/btn_back.png");
+    background-size: 100%;
+  }
+  .search {
+    width: 5rem;
+    height: 0.64rem;
+    border-radius: 0.04rem;
+    color: #d7ccc8;
+    border: none;
+    text-indent: 0.6rem;
+    background:#9f675e url("../images/ico_research2.png") no-repeat 0.16rem 0.12rem;
+    background-size: 7%;
+  }
+  .more {
+    width: 0.4rem;
+    height: 0.4rem;
+    margin: 0 .32rem;
+    background:url("../images/btn_zhuanfa.png") no-repeat 0 0;
+    background-size: 100%;
+  }
+}
+.list-shop-top {
+  .pic {
+    width: 100%;
+  }
+
+}
+.list-shop-content {
+  margin: .2rem .32rem;
+  width: 6.85rem;
+  height: 4.6rem;
+  background-color: #ffffff;
+  border-radius: 0.1rem;
+  li {
+    margin: .2rem;
+    padding: 0.25rem 0;
+    border-bottom: 1px solid #dddddd;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .pic {
+    img {
+      width: .9rem;
+      height: .9rem;
+    }
+
+  }
+  .center {
+    width: 3rem;
+    .title1 {
+      font-size: 0.3rem;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 1.8;
+      letter-spacing: 0.004rem;
+      color: #ff5252;
+    }
+    .title2 {
+      font-size: 0.24rem;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: 0.003rem;
+      color: #333333;
+    }
+
+  }
+  .other {
+    width: 1.6rem;
+    font-size: 0.28rem;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 1.1;
+    letter-spacing: 0.003rem;
+    color: #666666;
+    background: url("../images/btn_enter.png") no-repeat center right;
+    background-size: 10%;
+  }
+
+}

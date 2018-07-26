@@ -1,0 +1,279 @@
+@charset "UTF-8";
+/*重置body*/
+body {
+  font-size: .28rem;
+  color: #333333;
+  background-color: #ebebeb;
+  padding: .32rem .32rem 1.5rem; }
+
+/*付款成功块*/
+.success-box {
+  position: relative;
+  height: 1.8rem;
+  background-color: #ffffff;
+  border-radius: 0.1rem;
+  margin-bottom: .16rem; }
+  .success-box .shop-evaluation-btn, .success-box .one-more-btn {
+    position: absolute;
+    bottom: .21rem;
+    font-size: .28rem;
+    border-radius: 0.3rem;
+    padding: .15rem .14rem;
+    color: #ffffff; }
+  .success-box .shop-evaluation-btn {
+    left: 3.47rem;
+    background-color: #ff9800; }
+  .success-box .one-more-btn {
+    left: 5.19rem;
+    background-color: #ff5252; }
+
+.box1 {
+  padding: .24rem .3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .box1 .pic {
+    width: 0.8rem;
+    height: 0.8rem; }
+    .box1 .pic img {
+      width: 0.8rem;
+      height: 0.8rem; }
+  .box1 .center {
+    width: 3.6rem; }
+    .box1 .center .msg {
+      font-size: 0.3rem;
+      line-height: 0.4rem;
+      letter-spacing: 0.004rem;
+      color: #4caf50; }
+    .box1 .center .desc, .box1 .center .get-score {
+      font-size: 0.28rem;
+      line-height: 0.4rem;
+      letter-spacing: 0.003rem;
+      color: #666666; }
+  .box1 .right {
+    font-size: 0.24rem;
+    line-height: 0.3rem;
+    letter-spacing: 0.003rem;
+    color: #999999; }
+    .box1 .right .day {
+      color: #f44336; }
+    .box1 .right .table_num {
+      font-size: 0.3rem;
+      line-height: 0.4rem;
+      letter-spacing: 0.004rem;
+      color: #999999; }
+
+.score-box {
+  padding: 0 .3rem;
+  font-size: .24rem;
+  color: #666666; }
+  .score-box .stars {
+    margin: 0 .1rem; }
+    .score-box .stars .gray {
+      display: inline-block;
+      width: 0.28rem;
+      height: 0.26rem;
+      background: url("../images/star_gray.png") no-repeat;
+      background-size: 100%; }
+    .score-box .stars .bright {
+      display: inline-block;
+      width: 0.28rem;
+      height: 0.26rem;
+      background: url("../images/star_yellow.png") no-repeat;
+      background-size: 100%; }
+  .score-box .score {
+    color: #f44336; }
+
+/*扫码*/
+.scan-box {
+  background-color: #ffffff;
+  border-radius: 0.1rem;
+  margin-bottom: .16rem;
+  padding: .24rem .24rem 0; }
+
+.scan-other {
+  display: flex;
+  align-items: center; }
+  .scan-other .pic {
+    display: inline-block;
+    width: 0.6rem;
+    height: 0.6rem;
+    background: url("../images/ico_scan.png") no-repeat;
+    background-size: 100%;
+    margin-right: .15rem; }
+  .scan-other .title {
+    font-size: .3rem;
+    color: #333333; }
+  .scan-other .desc {
+    font-size: .24rem;
+    color: #666666; }
+
+.scan {
+  display: block;
+  margin: .1rem auto 0;
+  text-align: center; }
+  .scan .pic {
+    width: 2.3rem;
+    height: 2.3rem; }
+  .scan .desc {
+    position: relative;
+    top: -.2rem;
+    color: #e57373; }
+
+/*就餐时间*/
+.meal-time {
+  padding: .26rem .3rem;
+  background-color: #ffffff;
+  border-radius: 0.1rem;
+  margin-bottom: .16rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .meal-time .pic {
+    display: inline-block;
+    width: 0.48rem;
+    height: 0.48rem;
+    background: url("../images/ico_time.png") no-repeat;
+    background-size: 100%; }
+  .meal-time .name {
+    font-size: .3rem;
+    width: 2.9rem; }
+  .meal-time .time {
+    font-size: .24rem;
+    color: #999999; }
+
+/*送餐时间*/
+.meal-time-end {
+  padding: .26rem .3rem;
+  background-color: #ffffff;
+  border-radius: 0.1rem;
+  margin-bottom: .16rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .meal-time-end .pic {
+    display: inline-block;
+    width: 0.48rem;
+    height: 0.48rem;
+    background: url("../images/ico_songcantime.png") no-repeat;
+    background-size: 100%; }
+  .meal-time-end .name {
+    font-size: .3rem; }
+  .meal-time-end .time {
+    font-size: .24rem;
+    color: #999999;
+    width: 3.2rem; }
+  .meal-time-end .desc {
+    font-size: .3rem; }
+
+/*外卖信息*/
+.takeout-information {
+  padding: .26rem .24rem;
+  background-color: #ffffff;
+  border-radius: 0.1rem;
+  margin-bottom: .16rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .takeout-information .pic {
+    display: inline-block;
+    width: 0.7rem;
+    height: 0.7rem;
+    background: url("../images/ico_address.png") no-repeat;
+    background-size: 100%;
+    margin-right: .3rem; }
+  .takeout-information .name-phone {
+    display: flex;
+    justify-content: space-between; }
+  .takeout-information .address {
+    font-size: 0.24rem;
+    line-height: 1.2;
+    letter-spacing: 0.003rem;
+    color: #999999;
+    margin-top: .1rem; }
+
+/*订单相关信息*/
+.detailed-box {
+  padding: .22rem;
+  background-color: #ffffff;
+  border-radius: 0.1rem;
+  margin-bottom: .18rem; }
+
+.shop-box .head {
+  display: flex;
+  align-items: center;
+  padding-bottom: .2rem;
+  border-bottom: 1px solid #dddddd; }
+  .shop-box .head .pic {
+    width: 0.48rem;
+    height: 0.48rem; }
+  .shop-box .head .title {
+    margin-left: .2rem; }
+
+.food-list {
+  border-bottom: 1px solid #dddddd; }
+
+.food {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: .12rem 0; }
+  .food .pic {
+    width: 0.94rem;
+    height: 0.94rem; }
+  .food .center {
+    flex-grow: 1;
+    margin-left: .2rem; }
+    .food .center .count {
+      font-size: .26rem;
+      color: #666666;
+      line-height: 2; }
+  .food .price {
+    color: #666666; }
+
+.discount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 2.4; }
+  .discount .price {
+    color: #f44336; }
+
+.voucher {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 3;
+  border-bottom: 1px solid #dddddd; }
+  .voucher .price {
+    color: #f44336;
+    flex-grow: 1;
+    text-align: right; }
+  .voucher .pic {
+    width: 0.16rem;
+    height: 0.28rem;
+    background: url("../images/btn_enter22.png") no-repeat center center;
+    background-size: 100%;
+    margin-left: .2rem; }
+
+.real-payment {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  line-height: 3; }
+  .real-payment .count {
+    margin-right: .3rem; }
+  .real-payment .total-price {
+    color: #f44336; }
+
+/*订单其它信息*/
+.order-msg {
+  background-color: #ffffff;
+  border-radius: 0.1rem;
+  padding: .35rem .22rem;
+  font-size: 0.28rem;
+  line-height: 0.48rem;
+  letter-spacing: 0.003rem;
+  color: #666666; }
+
+/*# sourceMappingURL=order_details.css.map */
